@@ -11,7 +11,7 @@ public class Distance {
         // calculate minimum difference between any two consecutive indexes
         for (int i = 0; i < arr.length -1; i++) {
             for (int j = i + 1; j <= arr.length -1; j++) {
-                if (min_dist < (arr[i] - arr[j])) {
+                if (min_dist > (arr[i] - arr[j])) {
                     min_dist = arr[i] - arr[j];
                     index = i;
                 }
